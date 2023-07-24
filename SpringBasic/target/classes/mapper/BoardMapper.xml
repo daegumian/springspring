@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+
+ <mapper namespace="com.simple.mapper.BoardMapper">
+ 	
+ 	<!-- insert -->
+ 	<insert id="boardRegister" parameterType="com.simple.command.BoardVO">
+ 		insert into score(name, title, content) values( #{name}, #{title}, #{content} )
+ 	</insert>
+ 	
+ 	<!-- select -->
+ 	<select id="getBoard" resultType="com.simple.command.BoardVO">
+ 		select * from board order by num desc
+ 	</select>
+ 	
+	<!-- delete --> 	
+ 	<delete id="boardDelete" parameterType="int">
+ 		delete from score where num = #{index}
+ 	</delete>
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ </mapper>
+
+  
+  
+  
