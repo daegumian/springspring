@@ -26,8 +26,8 @@ public class JDBCMybatis {
 //		int result = testMapper.insertOne("test");
 //		System.out.println("성공실패?:" + result);
 //	}
-//	
-//	
+	
+	
 //	@Test
 //	public void testCode02() {
 //		ScoreVO vo = new ScoreVO(0, "test", "100", "90");
@@ -61,7 +61,7 @@ public class JDBCMybatis {
 //		ScoreVO vo = testMapper.selectOne(3);
 //		System.out.println(vo.toString());
 //	}
-
+	
 //	@Test
 //	public void testCode07() {
 //		HashMap<String, Object> map = testMapper.selectTwo(3);
@@ -70,8 +70,9 @@ public class JDBCMybatis {
 	
 //	@Test
 //	public void testCode07() {
-//		ArrayList< HashMap<String, Object>> list = testMapper.selectThree();
+//		ArrayList<HashMap<String, Object> > list = testMapper.selectThree();
 //		System.out.println(list.toString());
+//		
 //	}
 	
 //	@Test
@@ -82,14 +83,9 @@ public class JDBCMybatis {
 	
 	@Test
 	public void testCode09() {
-		MemberVO vo = testMapper.joinTwo("admin");
+		MemberVO vo = testMapper.joinTwo("test");
 		System.out.println(vo.toString());
-		
 	}
-	
-	
-	
-	
 	
 	
 	

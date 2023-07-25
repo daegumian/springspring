@@ -3,27 +3,25 @@ package com.simple.command;
 import java.util.ArrayList;
 
 public class MemberVO {
-	
 	//1
 	private String id;
 	private String addr;
-	
 	//M
 	private ArrayList<ScoreVO> list;
 	
-	
-	@Override
-	public String toString() {
-		return "MemberVO [id=" + id + ", addr=" + addr + ", list=" + list + "]";
+	public MemberVO() {
 	}
-
-	public MemberVO() {}
-
+	
 	public MemberVO(String id, String addr, ArrayList<ScoreVO> list) {
 		super();
 		this.id = id;
 		this.addr = addr;
 		this.list = list;
+	}
+	
+	@Override
+	public String toString() {
+		return "MemberVO [id=" + id + ", addr=" + addr + ", list=" + list + "]";
 	}
 
 	public String getId() {
@@ -48,9 +46,11 @@ public class MemberVO {
 
 	public void setList(ArrayList<ScoreVO> list) {
 		this.list = list;
-	};
-	
-	
-	
+	}
 
+	
+	
+	
+	
+	
 }

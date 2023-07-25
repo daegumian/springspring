@@ -66,6 +66,7 @@ public class ScoreController {
 		return "redirect:/service/scoreResult";//등록 이후에 결과로
 	}
 	
+	
 	//삭제요청
 	@RequestMapping("/scoreDelete")
 	public String scoreDelete(@RequestParam("num") int index ) {

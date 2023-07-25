@@ -26,7 +26,6 @@ public class BoardController {
 	@RequestMapping("/boardList")
 	public String boardList() {
 		
-		ArrayList<BoardVO> list = boardService.getList();
 		
 		
 		return "service/boardList";

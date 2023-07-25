@@ -21,10 +21,10 @@
 		</tr>
 		
 		<tr>
-			<td>${vo.num }</td>
-			<td>${vo.name }</td>
-			<td>${vo.title }</td>
-			<td>${vo.content }</td>
+			<td>???????</td>
+			<td>???????</td>
+			<td>???????</td>
+			<td>???????</td>
 			<!-- 
 			1. boardDelete로 삭제 처리하세요. 
 			2. 삭제 후엔 목록화면으로 리다이렉트 하세요.
@@ -35,7 +35,7 @@
 	</table>
 	
 	<%--게시글 작성페이지로 이동시키세요. --%>
-	<a href="boardRegister">게시글 작성</a>
+	<a href="">게시글 작성</a>
 	
 </body>
 </html>

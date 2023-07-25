@@ -28,22 +28,19 @@ public interface TestMapper {
 	
 	//select - 파라미터를 넘기는 과정은 위와 동일합니다.
 	public ScoreVO selectOne(int num);
-	
 	//select - 반환유형이 맵
 	public HashMap<String, Object> selectTwo(int num);
+	//한행을 맵으로 처리하는데, 여러행이라면?
+	public ArrayList< HashMap<String, Object> > selectThree();
 	
-	//한행을 맵으로 처리하는 여러행이라면?
-	public ArrayList<HashMap<String, Object> > selectThree();
-
+	
 	//join처리
-	//M:1방식 - ORM은 M쪽에 변수를 추가한다.
+	//M:1방식 - ORM은 M쪽에 변수를 추가
 	public ArrayList<ScoreVO> joinOne();
-	
-	//join처리2
-	//1:M - ORM은 직접처리한다. 이상한 방법임.
-	//ex)회원에 글을 붙이는
+	//1:M방식 - ORM은 직접처리
 	public MemberVO joinTwo(String name);
-
-
-
+	
+	
+	
+	
 }
